@@ -17,8 +17,13 @@ public class TaurPortalListener extends PlayerListener {
     public void onPlayerTeleport(PlayerTeleportEvent event) {
         Player player = event.getPlayer();
         World targetWorld = player.getWorld();
+        Location spawn = player.getWorld().getSpawnLocation();
         if(targetWorld.getEnvironment() == Environment.THE_END) {
         	event.setCancelled(true);
+                spawn.setX(spawn.getBlockX() + 0.5);
+                spawn.setY(spawn.getBlockY());
+                spawn.setZ(spawn.getBlockZ() + 0.5);
+                player.teleport(spawn);
         }
 }
     
