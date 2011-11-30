@@ -37,7 +37,7 @@ public class TaurPortal extends JavaPlugin {
 		}
 		if(config.getString("credits.thank-you-for-downloading") != "Tauryuu created this Bukkit plugin. Please visit http://embarker.me when you have time!")
 		{
-			config.set("version.current-plugin-version-number", "Tauryuu created this Bukkit plugin. Please visit http://embarker.me when you have time!");
+			config.set("credits.thank-you-for-downloading", "Tauryuu created this Bukkit plugin. Please visit http://embarker.me when you have time!");
 		}
 	}
 
