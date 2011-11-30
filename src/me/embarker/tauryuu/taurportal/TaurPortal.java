@@ -8,6 +8,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class TaurPortal extends JavaPlugin {
 	
+	//@author Tauryuu
+	
 	public static FileConfiguration config;
 	
 	public void onEnable()

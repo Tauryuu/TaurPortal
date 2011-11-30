@@ -9,6 +9,8 @@ import org.bukkit.event.player.PlayerTeleportEvent;
 
 public class TaurPortalListener extends PlayerListener {
 	
+	//@author Tauryuu
+	
     public void onPlayerPortal(PlayerPortalEvent event) {
     	event.setCancelled(true);
     	return;
