@@ -2,6 +2,7 @@ package me.embarker.tauryuu.taurportal;
 
 import org.bukkit.World;
 import org.bukkit.World.Environment;
+import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerListener;
 import org.bukkit.event.player.PlayerPortalEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
@@ -14,8 +15,8 @@ public class TaurPortalListener extends PlayerListener {
     }
     
     public void onPlayerTeleport(PlayerTeleportEvent event) {
-        World targetWorld = event.getWorld();
-        Environment env = targetWorld.getEnvironment();
+        Player player = event.getPlayer();
+        World targetWorld = player.getWorld();
         if(targetWorld.getEnvironment() == Environment.THE_END) {
         	event.setCancelled(true);
         }
