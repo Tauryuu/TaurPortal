@@ -14,7 +14,7 @@ public class TaurPortal extends JavaPlugin {
 	{
 		Bukkit.getServer().getPluginManager().registerEvent(Type.PLAYER_PORTAL, new TaurPortalListener(), Priority.Normal, this);
 		Bukkit.getServer().getPluginManager().registerEvent(Type.PLAYER_TELEPORT, new TaurPortalListener(), Priority.Normal, this);
-		System.out.println("[TaurPortal] " +  this.getDescription().getVersion() + " has been enabled.");
+		System.out.println("[TaurPortal] version " +  this.getDescription().getVersion() + " has been enabled.");
 		config = getConfig();
 		configSetup();
 		saveConfig();
