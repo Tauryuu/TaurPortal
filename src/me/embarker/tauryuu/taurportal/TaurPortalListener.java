@@ -24,6 +24,7 @@ public class TaurPortalListener extends PlayerListener {
         	spawn.setY(spawn.getBlockY());
         	spawn.setZ(spawn.getBlockZ() + 0.5);
                 player.teleport(spawn);
+         return;
         }
 }
     
